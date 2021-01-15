@@ -16,7 +16,7 @@ body {
 }
 #Titolo-main {
 color: #FFFFFF;
-background: #232323;
+
 text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 text-align: center;
 }
@@ -97,16 +97,16 @@ text-align: center;
 
 <input id='lel', type="checkbox" class="checkbox">
 <script type="text/javascript">
-  if (document.getElementById('lel').clicked == true) {
-    document.getElementById('ilcentro').style.backgroundColor('#000000')
-    console.log('......')
-
-  }
-  if (document.getElementById('lel').clicked == false) {
-    document.getElementById('ilcentro').style.backgroundColor('#000000')
-    console.log('.')
-
-  }
+document.getElementById('lel').onclick = function () {
+    if(document.getElementById('lel').checked == true) {
+        document.getElementById('ilcentro').style.backgroundColor = '#fff'
+                document.getElementById('Titolo-main').style.color = '#000'
+    }
+    if (document.getElementById('lel').checked == false) {
+        document.getElementById('ilcentro').style.backgroundColor = '#000'
+        document.getElementById('Titolo-main').style.color = '#fff'
+    }
+}
 </script>
 
 
