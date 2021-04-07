@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+/*
+Discord
+*/
+
 #ds_logo {
     position: absolute;
     height: 125px;
-    width: auto;
-}
-
-#spotify_logo {
-    position: absolute;
-
-    height: 120px;
     width: auto;
 }
 
@@ -30,6 +27,17 @@
     color: white;
 }
 
+/*
+Spotify
+*/
+
+#spotify_logo {
+    position: absolute;
+
+    height: 120px;
+    width: auto;
+}
+
 #spotify_text {
     min-height: 10em;
     display: table-cell;
@@ -47,6 +55,92 @@
     top: 125px;
     left: 350px;
 }
+
+/*
+Reddit
+*/
+#reddit_text {
+    min-height: 10em;
+    display: table-cell;
+    position: absolute;
+    font-size: large;
+    top: 250px;
+    font-family: 'Alfa Slab One', cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    left: 580px;
+}
+
+.reddit {
+    top: 125px;
+    left: 550px;
+}
+
+#reddit_logo {
+    position: absolute;
+    height: 125px;
+    width: auto;
+}
+/*
+Steam
+*/
+
+#steam_logo {
+    position: absolute;
+    height: 125px;
+    width: auto; 
+}
+
+.steam {
+    top: 125px;
+    left: 760px;
+}
+
+#steam_text {
+    min-height: 10em;
+    display: table-cell;
+    position: absolute;
+    font-size: large;
+    top: 250px;
+    font-family: 'Alfa Slab One', cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    left: 785px;
+}
+
+/*
+Top.gg
+*/
+
+#topgg_logo {
+    position: absolute;
+    height: 125px;
+    width: auto; 
+}
+
+.topgg {
+    top: 125px;
+    left: 980px;
+}
+
+#topgg_text {
+    min-height: 10em;
+    display: table-cell;
+    position: absolute;
+    font-size: large;
+    top: 250px;
+    font-family: 'Alfa Slab One', cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    left: 1005px;
+}
+
+/*
+Other stuff
+*/
 
 h1 {
     text-align: center;
