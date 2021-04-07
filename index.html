@@ -1,120 +1,15 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <script type="text/javascript"
-      src="./script.js"></script>
-     <style>
-     #demotext {
-color: #FFFFFF;
-background: #333333;
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-color: #FFFFFF;
-background: #333333;
-width: 100px;
-height: 50px;
-font-size: 20px;
-}
-body {
-  background-color: black;
-}
-#Titolo-main {
-color: #FFFFFF;
-font-family: Arial, Helvetica, sans-serif;
-text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-text-align: center
-
-}
-
-
-.checkbox{
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    -webkit-appearance: none;
-    width: 80px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 20px;
-    cursor: pointer;
-    outline: none;
-}
-
-.checkbox:checked{
-    background-color: #3498db;
-}
-
-.checkbox::before{
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    border-radius: 20px;
-    top: 4px;
-    left: 4px;
-    transition: .3s linear;
-}
-
-.checkbox:checked::before{
-    left: 44px;
-}
-
-.page-content{
-    width: 800px;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-}
-
-.page-content img{
-    height: 400px;
-    margin-right: 30px;
-}
-
-.page-content h1{
-    margin-top: 0;
-    font-size: 26px;
-    text-transform: uppercase;
-}
-
-.page-content p{
-    font-size: 18px;
-    text-align: justify;
-}
-
-.checkbox:checked + .page-content{
-    filter: brightness(20%);
-}
-
-</style>
-      <title>Index of contents</title>
-
-   </head>
-   <body id='ilcentro'>
-     <h1 id='Titolo-main'>StarInfo - home</h1>
-     <button id="demotext" class="float-left submit-button" >Portale scuola</button>
-
-
-<script type="text/javascript">
-    document.getElementById("demotext").onclick = function () {
-        location.href = "./scuola/index.html";
-    };
-</script>
-
-<input id='lel', type="checkbox" class="checkbox">
-<script type="text/javascript">
-document.getElementById('lel').onclick = function () {
-    if(document.getElementById('lel').checked == true) {
-        document.getElementById('ilcentro').style.backgroundColor = '#fff'
-                document.getElementById('Titolo-main').style.color = '#000'
-    }
-    if (document.getElementById('lel').checked == false) {
-        document.getElementById('ilcentro').style.backgroundColor = '#000'
-        document.getElementById('Titolo-main').style.color = '#fff'
-    }
-}
-</script>
-
-
-   </body>
+    <head>
+        <title>StarNumber12046</title>
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1 id="titolo">StarNumber12046</h1>
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png" id="ds_logo" class="discord">
+        <a href="https://discord.gg/7nW8sXxTka" id="ds_text" class="discord">Discord server</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" id="spotify_logo" class="spotify">
+        <a href="https://open.spotify.com/user/ltcws6vso5b5hip57wn3l1bs1?si=3oRFGbYIT-me6hIpwsR4zA" id="spotify_text" class="spotify">Spotify</a>
+    </body>
 </html>

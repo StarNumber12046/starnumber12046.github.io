@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+#ds_logo {
+    position: absolute;
+    height: 125px;
+    width: auto;
+}
+
+#spotify_logo {
+    position: absolute;
+
+    height: 120px;
+    width: auto;
+}
+
+.discord {
+    left: 150px;
+    top: 125px;
+}
+
+#ds_text {
+    min-height: 10em;
+    display: table-cell;
+    position: absolute;
+    font-size: large;
+    top: 250px;
+    font-family: 'Alfa Slab One', cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
+
+#spotify_text {
+    min-height: 10em;
+    display: table-cell;
+    position: absolute;
+    font-size: large;
+    top: 250px;
+    font-family: 'Alfa Slab One', cursive;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    left: 375px;
+}
+
+.spotify {
+    top: 125px;
+    left: 350px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color:azure;    
+}
+
+body {
+    background: url("https://besthqwallpapers.com/Uploads/28-3-2019/85193/thumb2-asus-rog-4k-neon-logo-abstract-background-republic-of-gamers.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
