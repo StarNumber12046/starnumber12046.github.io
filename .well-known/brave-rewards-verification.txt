@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: starnumber.tk
+Token: fc36f592c61250f35d67192f8d21f199bbe958dc984d99defc49935fff2aca35
