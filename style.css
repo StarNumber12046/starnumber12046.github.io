@@ -1,12 +1,9 @@
-@font-face {
-    font-family: "gaming";
-    src: url("./gaming.woff") format('woff');
-}
+
 
 #barra-laterale {
     left: 0px;
     width: 250px;
-    background-color: #faa61a;
+    background-color: #81EAF9;
 }
 img {
     left: 50px;
@@ -24,7 +21,7 @@ h2 {
 }
 
 body {
-    background-color: rgb(49, 47, 47);
+    background-color: #2B2E3B;
 }
 
 #discord {
