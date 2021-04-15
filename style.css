@@ -68,3 +68,45 @@ body {
     position: absolute;
     left: 92px;
 }
+
+#twitch {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 130px;
+}
+
+#twitch:hover {
+    font-size: 29px;
+    color: #6441a5;
+    position: absolute;
+    left: 128px;
+}
+
+#reddit {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 165px;
+}
+
+#reddit:hover {
+    font-size: 29px;
+    color: #ff5700;
+    position: absolute;
+    left: 163px;
+}
+
+#github {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 200px;
+}
+
+#github:hover {
+    font-size: 29px;
+    color: white;
+    position: absolute;
+    left: 198px;
+}
