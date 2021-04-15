@@ -1,155 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-
-/*
-Discord
-*/
-
-#ds_logo {
-    position: absolute;
-    height: 125px;
-    width: auto;
+@font-face {
+    font-family: "gaming";
+    src: url("./gaming.woff") format('woff');
 }
 
-.discord {
-    left: 150px;
-    top: 125px;
+#barra-laterale {
+    left: 0px;
+    width: 250px;
+    background-color: #faa61a;
 }
-
-#ds_text {
-    min-height: 10em;
-    display: table-cell;
-    position: absolute;
-    font-size: large;
-    top: 250px;
-    font-family: 'Alfa Slab One', cursive;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
+img {
+    left: 50px;
+    position: relative;
+    top: 15px;
+    border: 10px solid #43b581;
+    display: block;
+    border-radius: 50%;
 }
-
-/*
-Spotify
-*/
-
-#spotify_logo {
-    position: absolute;
-
-    height: 120px;
-    width: auto;
-}
-
-#spotify_text {
-    min-height: 10em;
-    display: table-cell;
-    position: absolute;
-    font-size: large;
-    top: 250px;
-    font-family: 'Alfa Slab One', cursive;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    left: 375px;
-}
-
-.spotify {
-    top: 125px;
-    left: 350px;
-}
-
-/*
-Reddit
-*/
-#reddit_text {
-    min-height: 10em;
-    display: table-cell;
-    position: absolute;
-    font-size: large;
-    top: 250px;
-    font-family: 'Alfa Slab One', cursive;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    left: 580px;
-}
-
-.reddit {
-    top: 125px;
-    left: 550px;
-}
-
-#reddit_logo {
-    position: absolute;
-    height: 125px;
-    width: auto;
-}
-/*
-Steam
-*/
-
-#steam_logo {
-    position: absolute;
-    height: 125px;
-    width: auto; 
-}
-
-.steam {
-    top: 125px;
-    left: 760px;
-}
-
-#steam_text {
-    min-height: 10em;
-    display: table-cell;
-    position: absolute;
-    font-size: large;
-    top: 250px;
-    font-family: 'Alfa Slab One', cursive;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    left: 785px;
-}
-
-/*
-Top.gg
-*/
-
-#topgg_logo {
-    position: absolute;
-    height: 125px;
-    width: auto; 
-}
-
-.topgg {
-    top: 125px;
-    left: 980px;
-}
-
-#topgg_text {
-    min-height: 10em;
-    display: table-cell;
-    position: absolute;
-    font-size: large;
-    top: 250px;
-    font-family: 'Alfa Slab One', cursive;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    left: 1005px;
-}
-
-/*
-Other stuff
-*/
-
-h1 {
-    text-align: center;
-    font-family: 'Alfa Slab One', cursive;
-    color:azure;    
+h2 {
+    left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-style: inherit;
 }
 
 body {
-    background-color: #23272A;
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+    background-color: rgb(49, 47, 47);
+}
+
+#discord {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 25px;
+}
+
+#discord:hover {
+    font-size: 30px;
+    color: #7289da;
+    position: absolute;
+    left: 22px;
+}
+
+#spotify {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 60px;
+}
+
+#spotify:hover {
+    font-size: 29px;
+    color: #1ed760;
+    position: absolute;
+    left: 58px;
+}
+
+#steam {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    left: 95px;
+}
+
+#steam:hover {
+    font-size: 29px;
+    color: white;
+    position: absolute;
+    left: 92px;
 }

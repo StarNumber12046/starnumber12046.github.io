@@ -5,19 +5,28 @@
         <link rel="icon" href="favicon.png" type="image/png" />
         <link rel="stylesheet" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/7a092a970e.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
+        <script src="script.js" onload="editheight"></script>
     </head>
     <body>
-        <h1 id="titolo">StarNumber12046</h1>
-        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png" id="ds_logo" class="discord">
-        <a href="https://discord.gg/7nW8sXxTka" id="ds_text" class="discord">Discord server</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1024px-Spotify_logo_without_text.svg.png" id="spotify_logo" class="spotify">
-        <a href="https://open.spotify.com/user/ltcws6vso5b5hip57wn3l1bs1?si=3oRFGbYIT-me6hIpwsR4zA" id="spotify_text" class="spotify">Spotify</a>
-        <img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png" id="reddit_logo" class="reddit">
-        <a href="http://reddit.com/r/Responderbot" id="reddit_text" class="reddit">Reddit</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" id="steam_logo" class="steam">
-        <a href="https://steamcommunity.com/id/StarNumber12046/" id="steam_text" class="steam">Steam</a>
-        <img src="https://top.gg/images/dblnew.png" id="topgg_logo" class="topgg">
-        <a href="https://https://top.gg/user/647092382503796740" id="topgg_text" class="topgg">Top.gg</a>
-    </body>
+        <div id="barra-laterale" onload="editheight">
+            <img src="https://cdn.discordapp.com/avatars/647092382503796740/e002f66e5f9f2ba7fb8496531bbe7e35.png" id="avatar">
+            <h2 id="title">StarNumber12046</h2>
+            <a href=""><i class="fab fa-discord" id="discord"></i></a>
+            <a href=""><i class="fab fa-spotify" id="spotify"></i></a>
+            <a href=""><i class="fab fa-steam" id="steam"></i></a>
+
+        
+        </div>
+        <script>
+            
+
+                    console.error("salve")
+                    barra = document.getElementById("barra-laterale")
+                    barra.style.height = String(screen.height - 160) + "px";
+                    console.log(screen.height)
+
+        </script>
+
 </html>
