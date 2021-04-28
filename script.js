@@ -19,3 +19,28 @@ function check() {
     }
 
 }
+
+function determine_phone(width, height) {
+    if (width > height) {
+        return "computer"
+    }
+    else if (width === height) {
+        return "square"
+    }
+    else if (width < height) {
+        return "phone"
+    }
+
+}
+
+function get_major_wdith() {
+    if(screen.width > window.width) {
+        return ["screen", screen.width, window.innerWidth]
+    }
+    else if (screen.width == window.innerWidth) {
+        return "same"
+    }
+    else {
+        return ["window", window.innerWidth, screen.width]
+    }
+}
