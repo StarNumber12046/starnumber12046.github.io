@@ -6,12 +6,14 @@
     background-color: #81EAF9;
 }
 #avatar {
-    left: 50px;
+    left: 40px;
     position: relative;
     top: 15px;
     border: 10px solid #4F6E79;
     display: block;
     border-radius: 50%;
+    width: 155px;
+    height: auto;
 }
 h2 {
     left: 15px;
