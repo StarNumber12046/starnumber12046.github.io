@@ -5,7 +5,7 @@
     width: 250px;
     background-color: #81EAF9;
 }
-img {
+#avatar {
     left: 50px;
     position: relative;
     top: 15px;
@@ -106,4 +106,43 @@ body {
     color: white;
     position: absolute;
     left: 198px;
+}
+
+#articles {
+    position: relative;
+    left: 200px;
+}
+
+.containers {
+    position: absolute;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    width: 475px;
+    height: 250px;
+    top: 10px;
+    left: 275px;
+
+
+}
+
+
+#codetxt {
+    color: #2B2E3B;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    display: block;
+
+
+    
+
+}
+
+#articles {
+    top: 0px;
+    left: 0px;
+    position: absolute;
 }
