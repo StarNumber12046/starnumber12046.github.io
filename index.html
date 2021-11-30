@@ -5,7 +5,6 @@
     <title>StarNumber12046</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -49,76 +48,73 @@
 
 <body>
 
-    
 
 
 
-    <div>
-        <div class="container-fluid" id="navbar">
-            <div class="container-fluid">
-                <button type="button" class="btn align-left" id="starnumber mylogo" data-toggle="tooltip"
-                    data-placement="top" title=""><img id="mylogo" src="logo.png" height="35px"></button>
-                <button type="button" class="btn align-right" id="chi-sono" data-toggle="tooltip" data-placement="top"
-                    title="">Chi sono</button>
+        <div>
+            <div class="container-fluid" id="navbar">
+                <div class="container-fluid">
+                    <button type="button" class="btn align-left" id="starnumber mylogo" data-toggle="tooltip"
+                        data-placement="top" title=""><img id="mylogo" src="logo.png" height="35px"></button>
+                    <button type="button" class="btn align-right" id="chi-sono" data-toggle="tooltip"
+                        data-placement="top" title="">Chi sono</button>
 
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid d-inline">
-        <h1 class="text-center" id="name">StarNumber12046</h1>
-        <div class="text-center container-fluid d-block" style="font-size:17px">
-            <h2 class="d-inline-flex" id="oof"></h2>
-        </div>
+        <div class="container-fluid d-inline oof">
+            <h1 class="text-center" id="name">StarNumber12046</h1>
+            <div class="text-center container-fluid d-block" style="font-size:17px">
+                <h2 class="d-inline-flex" id="oof"></h2>
+            </div>
 
 
 
-        <div id="chi-sono" class="container-fluid">
-            <h1 style="font-weight: bolder;">Chi sono</h1>
-            <p>
+            <div id="chi-sono" class="container-fluid">
+                <h1 style="font-weight: bolder;">Chi sono</h1>
+                <p>
 
 
 
 
-                <br>
+                    <br>
 
-            </p>
-            <script>
-                var typed = new Typed('#oof', {
-                    strings: ['Not a full stack developer', 'Twitch streamer', 'Among Us fan', 'Doge fan', 'Web developer', 'PC and mobile gamer'],
-                    loop: true,
-                    backSpeed: 40,
-                    typeSpeed: 40,
-                    backDelay: 2000
-                });
+                </p>
+                <script>
+                    var typed = new Typed('#oof', {
+                        strings: ['Not a full stack developer', 'Twitch streamer', 'Among Us fan', 'Web developer', 'PC and mobile gamer'],
+                        loop: true,
+                        backSpeed: 40,
+                        typeSpeed: 40,
+                        backDelay: 2000
+                    });
+                </script>
+            </div>
+            
+            <script type="text/javascript">
+
+                var starnumber = document.getElementById("starnumber");
+                starnumber.onclick = function () {
+                    window.location.href = "#";
+                }
+                var chi_sono = document.getElementById("chi-sono");
+                chi_sono.onclick = function () {
+                    window.location.href = "#chi-sono";
+                }
+
+                
+
+
+
+
             </script>
+
         </div>
-        <script type="text/javascript">
-
-            var starnumber = document.getElementById("starnumber");
-            starnumber.onclick = function () {
-                window.location.href = "#";
-            }
-            var chi_sono = document.getElementById("chi-sono");
-            chi_sono.onclick = function () {
-                window.location.href = "#chi-sono";
-            }
-
-            $(function () {
-                $(".element").typed({
-                    strings: ["First sentence.", "Second sentence."],
-                    typeSpeed: 0
-                });
-            });
-
-
-
-
-        </script>
-
-    </div>
-    <footer class="footer">
+    
+    <!--<footer class="footer">
         <p>This website is open source under Creative Commons Zero license, view the source <a
                 href="https://github.com/starnumber12046/starnumber12046.github.io">here</a></p>
     </footer>
+-->
 
 </html>
