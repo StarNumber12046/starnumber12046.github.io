@@ -11,7 +11,9 @@
   width: 10px;
   border-radius: 5px;
 }
-
+#oof {
+  color: rgb(0, 110, 255);
+}
 /* Track */
 ::-webkit-scrollbar-track {
   backdrop-filter: blur(4px);
