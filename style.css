@@ -7,6 +7,8 @@
     backdrop-filter: blur(4px);
 
 }
+
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 5px;
@@ -67,7 +69,14 @@ body {
 
 
 
-
+#starnumber:hover {
+    animation: shake 0.5s;
+  animation-iteration-count: infinite; 
+}
+#mylogo:hover {
+    animation: shake 0.5s;
+  animation-iteration-count: infinite; 
+}
 
 
 @keyframes shake {
