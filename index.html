@@ -49,72 +49,74 @@
 <body>
 
 
+<div id="page">
+    <div>
+        <div class="container-fluid" id="navbar">
+            <div class="container-fluid">
+                <button type="button" class="btn align-left" id="mylogo" data-toggle="tooltip" data-placement="top"
+                    title=""><img id="mylogo starnumber" src="logo.png" height="35px"></button>
+                <button type="button" class="btn align-right" id="chi-sono" data-toggle="tooltip" data-placement="top"
+                    title="">Chi sono</button>
+                    
+                        <a onclick="window.location.href='https://github.com/starnumber12046'"><i id="github" class="icon  align-items-right fab fa-github"></i></a>
+                        
+                        <a onclick="window.location.href='https://twitch.tv/starnumber12046'"><i id="twitch"
+                                class="icon align-items-right fab fa-twitch"></i></a>
+                    
+                        <a onclick="window.location.href='https://discord.gg/8E3wbm9SJ8'"><i id="discord" class="icon align-items-right fab fa-discord"></i></a>
+                        <a onclick="window.location.href='https://stackoverflow.com/users/17473167/starnumber12046'"><i class="fab fa-stack-overflow icon align-items-tright" id="stackoverflow" aria-hidden="true"></i></a>
 
+                    
 
-        <div>
-            <div class="container-fluid" id="navbar">
-                <div class="container-fluid">
-                    <button type="button" class="btn align-left" id="mylogo" data-toggle="tooltip"
-                        data-placement="top" title=""><img id="mylogo starnumber" src="logo.png" height="35px"></button>
-                    <button type="button" class="btn align-right" id="chi-sono" data-toggle="tooltip"
-                        data-placement="top" title="">Chi sono</button>
-
-                </div>
             </div>
         </div>
-        <div class="container-fluid d-inline oof">
-            <h1 class="text-center" id="name">StarNumber12046</h1>
-            <div class="text-center container-fluid d-block" style="font-size:17px">
-                <h2 class="d-inline ">I'm <h2 class="d-inline-flex" id="oof"></h2></h2>
-            </div>
+    </div>
+    <div class="container-fluid d-inline oof">
+        <h1 class="text-center" id="name">StarNumber12046</h1>
+        <div class="text-center container-fluid d-block" style="font-size:17px">
+            <h2 class="d-inline ">I'm <h2 class="d-inline-flex" id="oof"></h2>
+            </h2>
+        </div>
 
 
 
-            <div id="chi-sono" class="container-fluid">
-                <h1 style="font-weight: bolder;">Chi sono</h1>
-                <p>
-
-
-
-
-                    <br>
-
-                </p>
-                <script>
-                    var typed = new Typed('#oof', {
-                        strings: ['not a full stack developer', 'a Twitch streamer', 'an Among Us fan', 'a Web developer', 'a doge lover', 'a PC and mobile gamer'],
-                        loop: true,
-                        backSpeed: 40,
-                        typeSpeed: 40,
-                        backDelay: 2000
-                    });
-                </script>
-            </div>
-            
-            <script type="text/javascript">
-
-                starnumber = document.getElementById("starnumber");
-                starnumber.onclick = function () {
-                    window.location.href = "#";
-                }
-                var chi_sono = document.getElementById("chi-sono");
-                chi_sono.onclick = function () {
-                    window.location.href = "#chi-sono";
-                }
-
-                
-
-
-
-
+        
+            <script>
+                var typed = new Typed('#oof', {
+                    strings: ['not a full stack developer', 'a Twitch streamer', 'an Among Us fan', 'a Web developer', 'a doge lover', 'a PC and mobile gamer'],
+                    loop: true,
+                    backSpeed: 40,
+                    typeSpeed: 40,
+                    backDelay: 2000
+                });
             </script>
+        
 
-        </div>
-    
-    <!--<footer class="footer">
-        <p>This website is open source under Creative Commons Zero license, view the source <a
+        <script type="text/javascript">
+
+            starnumber = document.getElementById("starnumber");
+            starnumber.onclick = function () {
+                window.location.href = "#";
+            }
+            var chi_sono = document.getElementById("chi-sono");
+            chi_sono.onclick = function () {
+                window.location.href = "#chi-sono";
+            }
+
+
+
+
+
+
+        </script>
+
+    </div>
+
+    <footer class="footer container-fluid">
+        
+        <p>Made with <i class="fas fa-heart" aria-hidden=true style="color: red;"></i> by StarNumber12046. This website is under Creative Commons Zero license, view the source <a
                 href="https://github.com/starnumber12046/starnumber12046.github.io">here</a></p>
     </footer>
--->
 
+</div>
 </html>
