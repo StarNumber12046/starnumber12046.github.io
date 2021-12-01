@@ -57,6 +57,9 @@ h1, h2, p {
 	}
 }
 
+.typed-cursor {
+  font-size: 2rem;
+}
 .icon {
   margin-top: 5px;
   display: block;
