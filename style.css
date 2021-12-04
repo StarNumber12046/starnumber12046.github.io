@@ -73,6 +73,10 @@ h1, h2, p {
   color: #9146FF;
 }
 
+#devian:hover {
+	color:#4e6252;
+}
+
 #github:hover {
   color: white;
 }
