@@ -8,7 +8,7 @@
 <main class="font-mono">
   <div class="inline-flex">
     <div class="w-15 col-span-1">
-      <img class="h-15" src="https://starnumber.tk/logo.png" alt="logo">
+      <img class="h-15" loading="lazy" src="/logo.png" alt="logo">
     </div>
     <div>
       <p class="pl-3 text-left font-mono col-span-2 text-lg"><span class="text-2xl">StarNumber12046</span><br>Svelte lover</p>
