@@ -1,7 +1,8 @@
 ---
 title: Reversing a sussy browser downloader
-date: 14/05/2023
+date: 2023-05-14T13:42:52+0000
 pin: true
+summary: "A browser downloader is a simple program, but when it is made in batch it can become infernal to reverse engineer."
 ---
 # Reversing a sussy browser downloader
 It all started when a friend of mine sent in his discord server the download link for a browser downloader made by a windows modding groud that I won't name here (for now). I tried it in a sandbox (sussy baka) and I realized it was a CUI (Command User Interface), which made me think how much effort they could've put in a so simple program.
