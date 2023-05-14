@@ -5,7 +5,6 @@ theme = "github-style"
 googleAnalytics = ""
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-enableGitalk = true
 
 [params]
   author = "StarNumber12046"
@@ -16,6 +15,7 @@ enableGitalk = true
   userStatusEmoji = "🚀"
   favicon = "/logo.png"
   location = "localhost:12046"
+  enableGitalk = true
 
   [params.gitalk]
     clientID = "406cc20d9057461a4466" 
