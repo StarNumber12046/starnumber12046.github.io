@@ -5,6 +5,7 @@ theme = "github-style"
 googleAnalytics = ""
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableGitalk = true
 
 [params]
   author = "StarNumber12046"
@@ -15,3 +16,14 @@ pygmentsUseClasses = true
   userStatusEmoji = "🚀"
   favicon = "/logo.png"
   location = "localhost:12046"
+
+  [params.gitalk]
+    clientID = "406cc20d9057461a4466" 
+    clientSecret = "clientsecret"
+    repo = "starnumber12046.github.io"
+    owner = "StarNumber12046"
+    admin = "StarNumber12046"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 30
+    pagerDirection = "last"
