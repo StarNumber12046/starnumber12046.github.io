@@ -24,8 +24,13 @@ jobs:
       run: |
         pnpm install
         pnpm run build
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Create artifact
+      uses: actions/upload-artifact@v4.3.1
       with:
-        folder: dist # The folder the action should deploy.
-  
+        path: dist # The folder the action should deploy.
+        name: actions
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v4.0.5
+      with:
+        artifact_name: actions
+    
