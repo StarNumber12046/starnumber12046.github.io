@@ -1,4 +1,5 @@
 module.exports = {
+  
   root: true,
   env: {
     browser: true,
@@ -39,4 +40,5 @@ module.exports = {
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-unnecessary-condition": "warn",
   },
+  
 };
