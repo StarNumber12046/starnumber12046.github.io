@@ -25,7 +25,7 @@ jobs:
         pnpm install
         pnpm run build
     - name: Create artifact
-      uses: actions/upload-pages-artifact@v4.3.1
+      uses: actions/upload-pages-artifact@v3.0.1
       with:
         path: dist # The folder the action should deploy.
         name: actions
