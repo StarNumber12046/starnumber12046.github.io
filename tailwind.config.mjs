@@ -2,6 +2,20 @@
 export default {
   darkMode: "media",
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  safelist: [
+    {
+      pattern:
+        /^bg-(red|blue|green|yellow|gray|indigo|purple|pink|sky|cyan)-\d{3}$/,
+    },
+    {
+      pattern:
+        /^text-(red|blue|green|yellow|gray|indigo|purple|pink|sky|cyan)-\d{3}$/,
+    },
+    {
+      pattern:
+        /^bg-(red|blue|green|yellow|gray|indigo|purple|pink|sky|cyan)-\d{3}\/\d+$/,
+    },
+  ],
   theme: {
     extend: {
       borderRadius: {

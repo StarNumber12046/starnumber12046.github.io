@@ -1,265 +1,99 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { ChevronDown } from "lucide-react";
-import { Image } from "astro:assets";
+import Hero from "../components/Hero.astro";
+import InterestCard from "../components/InterestCard.astro";
+import SkillCard from "../components/SkillCard.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
 import AviationCover from "@/assets/aviation-cover.jpg";
 import DevelopmentCover from "@/assets/development-cover.jpg";
 import GamesCover from "@/assets/games-cover.jpg";
 import Logo from "@/assets/logo.png";
 import CrystalMarble from "@/assets/CrystalMarble.png";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
   <main class="flex flex-col items-center justify-center gap-4 w-screen">
-    <div
-      class="min-h-screen w-screen flex flex-col items-center justify-center border-b border-b-neutral-900"
-    >
-      <h1 class="text-5xl dark:text-white font-semibold">
-        Hello, I'm <span
-          class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-700"
-          >StarNumber</span
-        >
-      </h1>
-      <h2 class="text-lg dark:text-gray-600">
-        Your friendly neighborhood developer, avgeek and game enjoyer.
-      </h2>
+    <Hero />
 
-      <div
-        class="dark:text-white text-center absolute bottom-4 flex items-center justify-center flex-col gap-0 hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out"
-      >
-        <h2>Scroll</h2><ChevronDown />
-      </div>
-    </div>
     <h1 class="text-4xl dark:text-white font-semibold">My Interests</h1>
-    <div
-      class="grid grid-cols-4 w-[97%] m-4 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all py-4"
-    >
-      <h1
-        class="text-2xl text-black dark:text-white font-semibold w-full px-6 col-start-1 col-span-3"
-      >
-        Aviation
-      </h1>
-      <p class="text-lg dark:text-gray-400 w-full px-6 col-start-1 col-span-3">
-        I love all things in aviation: planes (civilian, military, private, you
-        name it!), helicopters, airports and more! I also spend way too much
-        time playing flight simulator, watching YouTube videos and reading stuff
-        about them.
-      </p>
-      <Image
-        src={AviationCover}
-        alt="Cover image for aviation"
-        width={300}
-        height={300}
-        class="rounded-md hover:scale-105 hover:-translate-y-4 ease-in-out duration-300 transition-all"
-      />
-    </div>
-    <div
-      class="grid grid-cols-4 w-[97%] m-4 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all py-4"
-    >
-      <h1
-        class="-ml-16 text-2xl text-black dark:text-white font-semibold w-full px-6 col-start-2 col-span-3"
-      >
-        Development
-      </h1>
-      <p
-        class="-ml-16 text-lg dark:text-gray-400 w-full px-6 col-start-2 col-span-3"
-      >
-        I like web (both front-end and back-end), mobile, desktop and mod
-        development. I know TypeScript (we don't talk about JS here), C#, Python
-        and I'm learning C++.
-      </p>
-      <Image
-        src={DevelopmentCover}
-        alt="Cover image for development"
-        width={300}
-        height={300}
-        class="col-start-1 ml-8 -mt-12 rounded-md hover:scale-105 hover:-translate-y-4 ease-in-out duration-300 transition-all"
-      />
-    </div>
-    <div
-      class="grid grid-cols-4 w-[97%] m-4 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all py-4"
-    >
-      <h1
-        class="text-2xl text-black dark:text-white font-semibold w-full px-6 col-start-1 col-span-3"
-      >
-        Games
-      </h1>
-      <p class="text-lg dark:text-gray-400 w-full px-6 col-start-1 col-span-3">
-        I love gaming. I'm a big fan of Marble it Up! Ultra and Classic (I'm the
-        developer of CrystalMarble: the marble it up! Mod loader), but also
-        Minecraft (Java, btw), MS Flight Simulator and Leaf Blower Revolution
-        (real AAA game lol)
-      </p>
-      <Image
-        src={GamesCover}
-        alt="Cover image for games"
-        width={300}
-        height={300}
-        class="rounded-md hover:scale-105 hover:-translate-y-4 ease-in-out duration-300 transition-all"
-      />
-    </div>
+    <InterestCard
+      title="Aviation"
+      description="I love all things in aviation: planes (civilian, military, private, you name it!), helicopters, airports and more! I also spend way too much time playing flight simulator, watching YouTube videos and reading stuff about them."
+      image={AviationCover}
+      imageAlt="Cover image for aviation"
+    />
+    <InterestCard
+      title="Development"
+      description="I like web (both front-end and back-end), mobile, desktop and mod development. I know TypeScript (we don't talk about JS here), C#, Python and I'm learning C++."
+      image={DevelopmentCover}
+      imageAlt="Cover image for development"
+      reverse={true}
+    />
+    <InterestCard
+      title="Games"
+      description="I love gaming. I'm a big fan of Marble it Up! Ultra and Classic (I'm the developer of CrystalMarble: the marble it up! Mod loader), but also Minecraft (Java, btw), MS Flight Simulator and Leaf Blower Revolution (real AAA game lol)"
+      image={GamesCover}
+      imageAlt="Cover image for games"
+    />
+
     <h1 class="text-4xl dark:text-white font-semibold">My Skills</h1>
     <div class="flex flex-row justify-center flex-wrap gap-4 m-4">
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">
-          Python
-        </h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-yellow-700/10">
-          <div
-            class="dark:bg-yellow-300 bg-yellow-500 text-xs font-medium text-yellow-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 90%"
-          >
-            Almost expert
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">
-          TypeScript
-        </h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-blue-700/10">
-          <div
-            class="dark:bg-blue-300 bg-blue-500 text-xs font-medium text-blue-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 80%"
-          >
-            Proficient
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">React</h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-blue-700/10">
-          <div
-            class="dark:bg-blue-300 bg-sky-500 text-xs font-medium text-sky-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 60%"
-          >
-            Intermediate
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">C#</h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-green-700/10">
-          <div
-            class="dark:bg-green-300 bg-green-500 text-xs font-medium text-green-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 75%"
-          >
-            Intermediate
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">Astro</h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-red-700/10">
-          <div
-            class="dark:bg-red-300 bg-red-500 text-xs font-medium text-red-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 35%"
-          >
-            Beginner
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">
-          React Native (Expo)
-        </h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-red-700/10">
-          <div
-            class="dark:bg-red-300 bg-red-500 text-xs font-medium text-red-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 50%"
-          >
-            Intermediate
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
-      >
-        <h1 class="text-2xl text-black dark:text-white font-semibold">
-          WinUi 3 / WPF
-        </h1>
-        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-cyan-700/10">
-          <div
-            class="dark:bg-cyan-300 bg-cyan-500 text-xs font-medium text-cyan-950 text-center p-0.5 leading-none rounded-full"
-            style="width: 55%"
-          >
-            Intermediate
-          </div>
-        </div>
-      </div>
+      <SkillCard
+        skill="Python"
+        proficiency="Almost expert"
+        width="90%"
+        color="yellow"
+      />
+      <SkillCard
+        skill="TypeScript"
+        proficiency="Proficient"
+        width="80%"
+        color="blue"
+      />
+      <SkillCard
+        skill="React"
+        proficiency="Intermediate"
+        width="60%"
+        color="sky"
+      />
+      <SkillCard
+        skill="C#"
+        proficiency="Intermediate"
+        width="75%"
+        color="green"
+      />
+      <SkillCard skill="Astro" proficiency="Beginner" width="35%" color="red" />
+      <SkillCard
+        skill="React Native (Expo)"
+        proficiency="Intermediate"
+        width="50%"
+        color="red"
+      />
+      <SkillCard
+        skill="WinUi 3 / WPF"
+        proficiency="Intermediate"
+        width="55%"
+        color="cyan"
+      />
     </div>
 
     <h1 class="text-4xl dark:text-white font-semibold">My Projects</h1>
     <div class="flex flex-row justify-center flex-wrap gap-4 m-4">
-      <div
-        class="items-center justify-center grid grid-cols-4 grid-rows-2 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all p-2"
-      >
-        <Image
-          class="row-span-2"
-          src={Logo}
-          alt="Logo"
-          width={75}
-          height={75}
-        />
-        <h1
-          class="text-2xl text-black dark:text-white font-semibold col-start-2 col-span-3"
-        >
-          <a
-            href="https://github.com/StarNumber/starnumber12046.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Portfolio
-          </a>
-        </h1>
-        <p
-          class="text-lg dark:text-gray-400 grid-col-start-2 col-start-2 col-span-3"
-        >
-          My personal website, built with Astro.
-        </p>
-      </div>
-      <div
-        class="items-center justify-center grid grid-cols-4 grid-rows-2 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all p-2"
-      >
-        <Image
-          class="row-span-2"
-          src={CrystalMarble}
-          alt="Logo"
-          width={75}
-          height={75}
-        />
-        <h1
-          class="text-2xl text-black dark:text-white font-semibold col-start-2 col-span-3"
-        >
-          <a
-            href="https://github.com/CrystalMarble"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Portfolio
-          </a>
-        </h1>
-        <p
-          class="text-lg dark:text-gray-400 grid-col-start-2 col-start-2 col-span-3 text-wrap w-96"
-        >
-          The Marble it Up! modding toolkit. Contains the loader, mods and an
-          installer.
-        </p>
-      </div>
+      <ProjectCard
+        image={Logo}
+        imageAlt="Portfolio Logo"
+        title="Portfolio"
+        description="My personal website, built with Astro."
+        link="https://github.com/StarNumber/starnumber12046.github.io"
+      />
+      <ProjectCard
+        image={CrystalMarble}
+        imageAlt="CrystalMarble Logo"
+        title="CrystalMarble"
+        description="The Marble it Up! modding toolkit..."
+        link="https://github.com/CrystalMarble"
+      />
     </div>
   </main>
 </Layout>
