@@ -19,9 +19,11 @@ import "../../styles/globals.css";
       src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
     ></script>
     <script>
-      window.plausible =
+      //@ts-ignore
+      window.plausible = //@ts-ignore
         window.plausible ||
         function () {
+          //@ts-ignore
           (window.plausible.q = window.plausible.q || []).push(arguments);
         };
     </script>
