@@ -5,6 +5,8 @@ import { Image } from "astro:assets";
 import AviationCover from "@/assets/aviation-cover.jpg";
 import DevelopmentCover from "@/assets/development-cover.jpg";
 import GamesCover from "@/assets/games-cover.jpg";
+import Logo from "@/assets/logo.png";
+import CrystalMarble from "@/assets/CrystalMarble.png";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -99,7 +101,7 @@ import GamesCover from "@/assets/games-cover.jpg";
       />
     </div>
     <h1 class="text-4xl dark:text-white font-semibold">My Skills</h1>
-    <div class="flex flex-row flex-wrap gap-4 m-4">
+    <div class="flex flex-row justify-center flex-wrap gap-4 m-4">
       <div
         class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
       >
@@ -169,7 +171,95 @@ import GamesCover from "@/assets/games-cover.jpg";
           </div>
         </div>
       </div>
+      <div
+        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
+      >
+        <h1 class="text-2xl text-black dark:text-white font-semibold">
+          React Native (Expo)
+        </h1>
+        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-red-700/10">
+          <div
+            class="dark:bg-red-300 bg-red-500 text-xs font-medium text-red-950 text-center p-0.5 leading-none rounded-full"
+            style="width: 50%"
+          >
+            Intermediate
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-4 dark:bg-neutral-950 bg-neutral-200 items-center rounded-md flex flex-row hover:-translate-y-1 ease-in-out duration-300 transition-all gap-2"
+      >
+        <h1 class="text-2xl text-black dark:text-white font-semibold">
+          WinUi 3 / WPF
+        </h1>
+        <div class="w-48 h-4 bg-gray-200 rounded-full dark:bg-cyan-700/10">
+          <div
+            class="dark:bg-cyan-300 bg-cyan-500 text-xs font-medium text-cyan-950 text-center p-0.5 leading-none rounded-full"
+            style="width: 55%"
+          >
+            Intermediate
+          </div>
+        </div>
+      </div>
     </div>
+
     <h1 class="text-4xl dark:text-white font-semibold">My Projects</h1>
+    <div class="flex flex-row justify-center flex-wrap gap-4 m-4">
+      <div
+        class="items-center justify-center grid grid-cols-4 grid-rows-2 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all p-2"
+      >
+        <Image
+          class="row-span-2"
+          src={Logo}
+          alt="Logo"
+          width={75}
+          height={75}
+        />
+        <h1
+          class="text-2xl text-black dark:text-white font-semibold col-start-2 col-span-3"
+        >
+          <a
+            href="https://github.com/StarNumber/starnumber12046.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio
+          </a>
+        </h1>
+        <p
+          class="text-lg dark:text-gray-400 grid-col-start-2 col-start-2 col-span-3"
+        >
+          My personal website, built with Astro.
+        </p>
+      </div>
+      <div
+        class="items-center justify-center grid grid-cols-4 grid-rows-2 bg-neutral-100 dark:bg-neutral-950 rounded-lg hover:-translate-y-1 ease-in-out duration-300 transition-all p-2"
+      >
+        <Image
+          class="row-span-2"
+          src={CrystalMarble}
+          alt="Logo"
+          width={75}
+          height={75}
+        />
+        <h1
+          class="text-2xl text-black dark:text-white font-semibold col-start-2 col-span-3"
+        >
+          <a
+            href="https://github.com/CrystalMarble"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio
+          </a>
+        </h1>
+        <p
+          class="text-lg dark:text-gray-400 grid-col-start-2 col-start-2 col-span-3 text-wrap w-96"
+        >
+          The Marble it Up! modding toolkit. Contains the loader, mods and an
+          installer.
+        </p>
+      </div>
+    </div>
   </main>
 </Layout>
