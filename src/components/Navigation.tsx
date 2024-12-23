@@ -23,7 +23,7 @@ export function Navigation() {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className={navigationMenuTriggerStyle()}>
-          <NavigationMenuLink className="dark:text-white" href="/">
+          <NavigationMenuLink className="dark:text-white" href="/about">
             About
           </NavigationMenuLink>
         </NavigationMenuItem>

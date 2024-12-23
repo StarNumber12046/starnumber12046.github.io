@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Discord from "../../assets/discord.svg";
+import Github from "../../assets/github.svg";
+import { Image } from "astro:assets";
+import { MailIcon } from "lucide-react";
+---
+
+<Layout title="About Me">
+  <main
+    class="dark:text-white flex flex-col items-center justify-center h-full"
+  >
+    <h1 class="text-4xl font-bold">
+      About <span
+        class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500"
+        >Me</span
+      >
+    </h1>
+    <p class="dark:text-white transition-all duration-500 ease-in-out">
+      Hey! I'm StarNumber, a software engineer, avgeek and gamer from <span
+        class="group"
+      >
+        <span class="group-hover:text-green-500 transition-all">It</span><span
+          class="group-hover:text-white transition-all">a</span
+        ><span class="group-hover:text-red-500 transition-all">ly</span>
+      </span>. I know <span class="hover:text-yellow-500 transition-all"
+        >Python</span
+      >, <span class="hover:text-sky-500 transition-all">TypeScript</span>, <span
+        class="hover:text-green-500 transition-all">C#</span
+      > and <a href="/#skills">more!</a> I'm currently learning <span
+        class="hover:text-orange-600 transition-all">Astro</span
+      > and
+      <span class="hover:text-green-700">C++</span>.
+    </p>
+
+    <h1 class="text-4xl font-bold mt-2">Contact</h1>
+    <div class="flex flex-row justify-center gap-2 mt-2 items-center">
+      <a href="https://discord.com/user/1174713902454554688">
+        <Image
+          class="dark:invert"
+          src={Discord}
+          alt="Discord"
+          width={25}
+          height={25}
+        />
+      </a>
+      <a href="https://github.com/StarNumber12046">
+        <Image
+          class="dark:invert"
+          src={Github}
+          alt="Github"
+          width={25}
+          height={25}
+        />
+      </a>
+      <a href="mailto:hi@starnumber.lol">
+        <MailIcon width={25} height={25} />
+      </a>
+    </div>
+  </main>
+</Layout>
