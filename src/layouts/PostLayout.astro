@@ -1,0 +1,93 @@
+---
+import { Navigation } from "../../src/components/Navigation";
+import "../../styles/globals.css";
+import Prose from "../components/Prose.astro";
+type Frontmatter = {
+  title: string;
+  pubDate: Date;
+  description: string;
+  author: string;
+  image: {
+    url: string;
+    alt: string;
+  };
+  tags: string[];
+};
+// @ts-ignore
+const { frontmatter }: { frontmatter: Frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <script
+      defer
+      data-domain="starnumber.lol"
+      data-api="/plausible/api/event"
+      src="/plausible/js/script.js"></script>
+    <script>
+      //@ts-ignore
+      window.plausible = //@ts-ignore
+        window.plausible ||
+        function () {
+          //@ts-ignore
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
+
+    <title>StarNumber's Portfolio</title>
+  </head>
+  <body class="dark:bg-black">
+    <Navigation />
+    <div
+      class="pt-24 flex flex-col dark:text-white justify-center items-center"
+    >
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-5xl pb-12 font-semibold">{frontmatter.title}</h1>
+        <p class="font-serif dark:text-gray-400">{frontmatter.description}</p>
+        <div class=`overflow-hidden`>
+          <!-- TODO: make this less ugly -->
+          <img
+            style=`width: ${frontmatter.title.length*24}px;`
+            class="aspect-video object-cover"
+            src={frontmatter.image.url}
+            alt={frontmatter.image.alt}
+          />
+        </div>
+
+        <div class="w-full my-4 py-2 border-y border-neutral-700">
+          <p>By {frontmatter.author}</p>
+          <p>
+            {
+              frontmatter.pubDate.toLocaleDateString("en-US", {
+                weekday: "short",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            }
+          </p>
+        </div>
+
+        <Prose>
+          <slot />
+        </Prose>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+</style>
