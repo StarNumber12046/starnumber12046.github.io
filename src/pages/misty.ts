@@ -11,7 +11,12 @@ export const GET: APIRoute = ({ redirect }) => {
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc780OaZhH5P0G6w3MEyX1bDsKTcfmiAJFgxRu",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScEzIP5VYmAScUoQs5dnwZ8IWDizP6LCxT07kG",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScicnOxHbJNDSA0dbzw5n9y7eoagGQMB1IWpmj",
-    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc5NQjtAyX8fPnKNaMwpqDjxe7J2BTi9ctboVd"
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc5NQjtAyX8fPnKNaMwpqDjxe7J2BTi9ctboVd",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASchLxHm5g884t9OyfnkzvWiZaYrcHVpPowMbxU",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScYEctNvsedOFNv53A4rncQox1Sqk0W2EyuXYV",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScveKwFjEYplugsz2NtUr14bFWBVAO5f0emwLR",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScBwghPK2TO2dlEge4TaRMfXrNnDvwm1ZPA7zJ",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScJJ6DqtmmISiDFWz5cdwBvXqNZf96Pubn3e7E"
   ];
 
   const randomUrl: string = urls[Math.floor(Math.random() * urls.length)];
