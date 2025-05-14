@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
 
+export const prerender = false
+
 export const GET: APIRoute = ({ redirect }) => {
   const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScvbltUcEYplugsz2NtUr14bFWBVAO5f0emwLR",
