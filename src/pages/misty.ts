@@ -14,5 +14,5 @@ export const GET: APIRoute = ({ redirect }) => {
 
   const randomUrl: string = urls[Math.floor(Math.random() * urls.length)];
 
-  return redirect(randomUrl, 301);
+  return redirect(randomUrl, 307);
 };
