@@ -18,6 +18,9 @@ export const GET: APIRoute = ({ redirect }) => {
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScBwghPK2TO2dlEge4TaRMfXrNnDvwm1ZPA7zJ",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScJJ6DqtmmISiDFWz5cdwBvXqNZf96Pubn3e7E",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScHxTQ8V0mIEjQXvt49wW3rVeNq07AUcnSsaPJ",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASclGCviH9UM2v4zoeEyhPRBXuSaYiClnN7KmLf",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc5PU1Z7yX8fPnKNaMwpqDjxe7J2BTi9ctboVd",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScsxZk2PfOoZPMFKTCEkg6NAy9u7VaGel2pi0v",
   ];
 
   const randomUrl: string = urls[Math.floor(Math.random() * urls.length)];
