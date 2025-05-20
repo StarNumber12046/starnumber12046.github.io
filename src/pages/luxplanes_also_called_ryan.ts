@@ -14,7 +14,7 @@ export const GET: APIRoute = async ({ request, redirect }) => {
   const url = new URL(request.url);
   const pass = url.searchParams.get("pass");
 
-  if (!pass || pass !== "LuxPlanes") {
+  if (!pass || pass !== xor("\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0029\u0006", KEY)) {
     return new Response("Forbidden: Invalid pass", { status: 403 });
   }
 
