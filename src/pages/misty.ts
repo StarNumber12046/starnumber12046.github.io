@@ -13,10 +13,11 @@ const template = `
         background-color: #111;
       }
       img {
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        display: block;
+        max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain; /* 👌 scales to fit */
+  display: block;
+  margin: auto;
       }
     </style>
   </head>
