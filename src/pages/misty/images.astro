@@ -1,0 +1,17 @@
+---
+import { urls } from '../../urls.ts';
+---
+
+<html>
+  <head>
+    <title>Misty</title>
+  </head>
+  <body>
+    <h1>All Images for Misty</h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+      {urls.map((url: string) => (
+        <img src={url} alt="Image" style="max-width: 300px; max-height: 300px;" />
+      ))}
+    </div>
+  </body>
+</html>
