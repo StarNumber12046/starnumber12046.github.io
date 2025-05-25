@@ -4,15 +4,27 @@ export const prerender = false
 
 const template = `
 <!doctype html>
-<html>
+<html style="margin:0; padding:0; background-color: #111;">
   <head>
-  <title>Misty</title>
+    <title>Misty</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #111;
+      }
+      img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <img src="___MISTY_IMG___" style="width: 100vw; height: 100vh;">
+    <img src="___MISTY_IMG___">
   </body>
 </html>
-`
+`;
 
 export const GET: APIRoute = ({ request, redirect }) => {
   const urls: string[] = [
