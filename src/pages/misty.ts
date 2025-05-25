@@ -2,6 +2,18 @@ import type { APIRoute } from "astro";
 
 export const prerender = false
 
+const template = `
+<!doctype html>
+<html>
+  <head>
+  <title>Misty</title>
+  </head>
+  <body>
+    <img src="___MISTY_IMG___" style="width: 100vw; height: 100vh;">
+  </body>
+</html>
+`
+
 export const GET: APIRoute = ({ redirect }) => {
   const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScvbltUcEYplugsz2NtUr14bFWBVAO5f0emwLR",
@@ -30,6 +42,10 @@ export const GET: APIRoute = ({ redirect }) => {
   ];
 
   const randomUrl: string = urls[Math.floor(Math.random() * urls.length)];
-
+  const url = new URL(request.url);
+  const webFriendly = url.searchParams.get("web");
+  if (web) {
+    return template.replace("___MISTY_IMAGE___", randomUrl)
+  }
   return redirect(randomUrl, 307);
 };
