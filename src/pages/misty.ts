@@ -14,7 +14,7 @@ const template = `
 </html>
 `
 
-export const GET: APIRoute = ({ redirect }) => {
+export const GET: APIRoute = ({ request, redirect }) => {
   const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScvbltUcEYplugsz2NtUr14bFWBVAO5f0emwLR",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScIF3aKExJmFu6hrWGjQ8lSMvCnaXe7DoVUNy9",
