@@ -45,7 +45,7 @@ export const GET: APIRoute = ({ request, redirect }) => {
   const url = new URL(request.url);
   const webFriendly = url.searchParams.get("web");
   if (webFriendly) {
-    return new Request(template.replace("___MISTY_IMAGE___", randomUrl))
+    return new Response(template.replace("___MISTY_IMAGE___", randomUrl))
   }
   return redirect(randomUrl, 307);
 };
