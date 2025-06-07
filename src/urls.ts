@@ -1,4 +1,4 @@
-export const urls: string[] = [
+const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScvbltUcEYplugsz2NtUr14bFWBVAO5f0emwLR",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScIF3aKExJmFu6hrWGjQ8lSMvCnaXe7DoVUNy9",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScVbl4ogtOEmpc2wb7yBNLrdHFTeCjXDPgWlaU",
@@ -42,5 +42,6 @@ export const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScPIhf0mCm6EHZ5NJASVqQlTW3xdXR71pDtebv",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASclQ2hSH9UM2v4zoeEyhPRBXuSaYiClnN7KmLf",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScrAIqWRMO4rKTut5WCFfMYEJsxL8UXi9wQdyv",
-    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASclhTFdG9UM2v4zoeEyhPRBXuSaYiClnN7KmLf"
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASclhTFdG9UM2v4zoeEyhPRBXuSaYiClnN7KmLf",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScr5PdWkMO4rKTut5WCFfMYEJsxL8UXi9wQdyv"
   ];
