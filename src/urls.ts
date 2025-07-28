@@ -100,5 +100,8 @@ export const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc99DLtNruk8M5KzdmyeZCNSYWqJsvU2l3rO70",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScsd2zmmOoZPMFKTCEkg6NAy9u7VaGel2pi0vO",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScvPZcMLEYplugsz2NtUr14bFWBVAO5f0emwLR",
-    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc4JH4YdBNqh7tVQD2fROdKEiWbC6sGZ8MLIcp"
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc4JH4YdBNqh7tVQD2fROdKEiWbC6sGZ8MLIcp",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASct29PU2eD85KAgHaqtBbRyZO9XsVQ63CLfx7W",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScJNFHXVmmISiDFWz5cdwBvXqNZf96Pubn3e7E",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScU7e7cq6BifNExh2tnRm8v3Mg4uCQcpKlS6oV"
   ];
