@@ -47,33 +47,12 @@ const { frontmatter }: { frontmatter: Frontmatter } = Astro.props;
   <body class="dark:bg-black">
     <Navigation />
     <div
-      class="pt-24 flex flex-col dark:text-white justify-center items-center"
+      class="px-36 pt-24 flex flex-col dark:text-white justify-center items-center"
     >
-      <div class="flex flex-col justify-center items-center">
-        <h1 class="text-5xl pb-12 font-semibold">{frontmatter.title}</h1>
+    <h1 class="text-5xl pb-4 font-semibold">{frontmatter.title}</h1>
+      <div class="flex flex-col justify-center items-center w-full">
+        <div class="prose w-full border-b border-neutral-700 mb-4" >
         <p class="font-serif dark:text-gray-400">{frontmatter.description}</p>
-        <div class=`overflow-hidden`>
-          <!-- TODO: make this less ugly -->
-          <img
-            style=`width: ${frontmatter.title.length*24}px;`
-            class="aspect-video object-cover"
-            src={frontmatter.image.url}
-            alt={frontmatter.image.alt}
-          />
-        </div>
-
-        <div class="w-full my-4 py-2 border-y border-neutral-700">
-          <p>By {frontmatter.author}</p>
-          <p>
-            {
-              frontmatter.pubDate.toLocaleDateString("en-US", {
-                weekday: "short",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })
-            }
-          </p>
         </div>
 
         <Prose>
