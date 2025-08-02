@@ -64,4 +64,4 @@ You can try the bot [here](https://discord.com/oauth2/authorize?client_id=140080
 
 ## Conclusion
 
-This was a fun little project, and I learned a lot about reverse engineering APIs. I'm pretty sure I'll be doing this again in the future, so I hope to write about it here and on my blog.
+This was a fun little project, and I learned a lot about reverse engineering APIs. I'm pretty sure I'll be doing this again in the future, so I hope to write about it here.
