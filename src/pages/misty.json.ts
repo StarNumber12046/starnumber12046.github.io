@@ -1,4 +1,4 @@
-import { urls } from '../../urls.ts';
+import { urls } from '../urls.ts';
 
 export const GET: APIRoute = ({ request, redirect }) => {
     
