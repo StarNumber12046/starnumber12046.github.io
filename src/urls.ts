@@ -180,5 +180,10 @@ export const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScfOHf8jQ9c6veQLI3YNshrBEz4Wwin0kA7XSm",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScV7ew0KtOEmpc2wb7yBNLrdHFTeCjXDPgWlaU",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScsxRo1scOoZPMFKTCEkg6NAy9u7VaGel2pi0v",
-    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScV3iM3CtOEmpc2wb7yBNLrdHFTeCjXDPgWlaU"
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScV3iM3CtOEmpc2wb7yBNLrdHFTeCjXDPgWlaU",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScPfVmkzCm6EHZ5NJASVqQlTW3xdXR71pDtebv",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc2olEySRfKg4UCXFBzviHZ0SleAot8mhqraN5",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc6CmisuztY5EZHTjS4q0GWpdvoaXAyzicxCRK",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASc5BoBWByX8fPnKNaMwpqDjxe7J2BTi9ctboVd",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScqz6quuTUb5uowP4vRjqOYKE72FeGmaUZsHQk"
   ];
