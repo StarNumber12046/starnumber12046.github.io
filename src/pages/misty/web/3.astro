@@ -1,0 +1,139 @@
+---
+export const prerender = false;
+import { urls } from "../../../urls";
+const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misty | Cyberpunk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #7C3AED;
+        --color-secondary: #A78BFA;
+        --color-cta: #F43F5E;
+        --color-bg: #0F0F23;
+        --color-text: #E2E8F0;
+        --font-pixel: 'Press Start 2P', cursive;
+        --font-terminal: 'VT323', monospace;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-terminal);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+      }
+
+      .crt::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        max-width: 90vw;
+        max-height: 90vh;
+        border: 2px solid var(--color-secondary);
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 20px var(--color-primary);
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: var(--font-pixel);
+        font-size: 1.5rem;
+        color: var(--color-cta);
+        text-shadow: 2px 2px 0px #000, 0 0 10px var(--color-cta);
+        letter-spacing: 0.1em;
+        animation: glitch 1s infinite alternate-reverse;
+      }
+
+      @keyframes glitch {
+        0% { transform: skew(0deg); }
+        20% { transform: skew(-2deg); }
+        40% { transform: skew(2deg); }
+        60% { transform: skew(0deg); }
+        80% { transform: skew(1deg); }
+        100% { transform: skew(-1deg); }
+      }
+
+      .image-frame {
+        border: 4px double var(--color-secondary);
+        padding: 4px;
+        background: #000;
+        box-shadow: 0 0 15px var(--color-secondary);
+        max-width: 100%;
+        max-height: 70vh;
+        overflow: hidden;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        filter: sepia(0.2) hue-rotate(290deg) contrast(1.2) brightness(1.1);
+      }
+
+      .btn {
+        font-family: var(--font-pixel);
+        font-size: 0.8rem;
+        background: transparent;
+        color: var(--color-secondary);
+        border: 2px solid var(--color-secondary);
+        padding: 1rem 2rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        box-shadow: 0 0 5px var(--color-secondary);
+      }
+
+      .btn:hover {
+        background: var(--color-secondary);
+        color: #000;
+        box-shadow: 0 0 20px var(--color-secondary);
+        text-shadow: none;
+      }
+
+    </style>
+  </head>
+  <body class="crt">
+    <div class="container">
+      <h1>MISTY_V3.0</h1>
+      <div class="image-frame">
+        <img src={randomUrl} alt="Cyberpunk Misty" />
+      </div>
+      <a href="/misty/web/3" class="btn">LOAD NEXT &gt;&gt;</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+---
+export const prerender = false;
+import { urls } from "../../../urls";
+const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misty | Minimal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #18181B;
+        --color-secondary: #27272A;
+        --color-cta: #09090B;
+        --color-bg: #FAFAFA;
+        --color-text: #09090B;
+        --font-heading: 'Bodoni Moda', serif;
+        --font-body: 'Jost', sans-serif;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        max-width: 90vw;
+        height: 90vh;
+      }
+
+      h1 {
+        font-family: var(--font-heading);
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.5rem;
+      }
+
+      .image-container {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border: 1px solid #E4E4E7;
+        padding: 1rem;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .btn {
+        font-family: var(--font-body);
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: var(--color-cta);
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Misty Collection</h1>
+      <div class="image-container">
+        <img src={randomUrl} alt="Misty Image" />
+      </div>
+      <a href="/misty/web/1" class="btn">Next Artifact</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+---
+export const prerender = false;
+import { urls } from "../../../urls";
+const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misty | Playful</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #FFB7B2;
+        --color-secondary: #FFDAC1;
+        --color-cta: #B5EAD7;
+        --color-bg: #E2F0CB;
+        --color-text: #4A4A4A;
+        --font-display: 'Fredoka', cursive;
+        --font-body: 'Nunito', sans-serif;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        padding: 2rem;
+        box-shadow: 20px 20px 60px #c0ccaD, -20px -20px 60px #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 90vw;
+        max-height: 90vh;
+        transition: transform 0.3s ease;
+      }
+
+      h1 {
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        color: #FF9AA2;
+        text-shadow: 2px 2px 0px #fff;
+        margin: 0;
+      }
+
+      .image-container {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 4px solid #fff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 60vh;
+        object-fit: contain;
+        display: block;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      img:hover {
+        transform: scale(1.05) rotate(2deg);
+      }
+
+      .btn {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 600;
+        background: var(--color-cta);
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(181, 234, 215, 0.4);
+        transition: all 0.2s ease;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(181, 234, 215, 0.6);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Misty Friend!</h1>
+      <div class="image-container">
+        <img src={randomUrl} alt="Playful Misty" />
+      </div>
+      <a href="/misty/web/5" class="btn">New Friend!</a>
+    </div>
+  </body>
+</html>

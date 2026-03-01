@@ -1,0 +1,132 @@
+---
+export const prerender = false;
+import { urls } from "../../../urls";
+const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misty | Luxury</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #18181B;
+        --color-secondary: #27272A;
+        --color-cta: #F8FAFC;
+        --color-bg: #111;
+        --color-text: #EAEAEA;
+        --font-serif: 'Cormorant', serif;
+        --font-sans: 'Montserrat', sans-serif;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-sans);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 2rem;
+        width: 100vw;
+        height: 100vh;
+        padding: 4rem;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-family: var(--font-serif);
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        opacity: 0.9;
+        margin: 0;
+      }
+
+      .image-viewer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .image-viewer img {
+        max-width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+        display: block;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .image-viewer img:hover {
+        transform: scale(1.01);
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        padding-bottom: 2rem;
+      }
+
+      .btn {
+        font-family: var(--font-sans);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--color-text);
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 1rem 3rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.4s ease;
+      }
+
+      .btn:hover {
+        border-color: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Misty Gallery</h1>
+      </header>
+      <div class="image-viewer">
+        <img src={randomUrl} alt="Luxury Misty" />
+      </div>
+      <footer>
+        <a href="/misty/web/4" class="btn">View Next</a>
+      </footer>
+    </div>
+  </body>
+</html>
