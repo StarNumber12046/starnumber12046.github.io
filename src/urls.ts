@@ -193,5 +193,6 @@ export const urls: string[] = [
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScsqyFQzOoZPMFKTCEkg6NAy9u7VaGel2pi0vO",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScGyyW0cPKmRSfBrUw3nA81gya7VleqkbIDu9E",
     "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmASczIgXZHJxALhCvSt9VsjpHeZcnRJX7OFDwqir",
-    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScAtnRzuydmF7BE2PlRDtu4kVTQgXGiJSfcKn1"
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScAtnRzuydmF7BE2PlRDtu4kVTQgXGiJSfcKn1",
+    "https://8ek6ccfrg2.ufs.sh/f/EO7fVpuYmAScScdWyEv28f05mH7yFwi6d4TaGpUjShPE9rVC"
   ];
