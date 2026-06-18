@@ -6,5 +6,33 @@ import { ChevronDown } from "lucide-react";
 <div
   class="dark:text-white text-center absolute bottom-4 flex items-center justify-center flex-col gap-0 hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out"
 >
-  <h2>Scroll</h2><ChevronDown />
+  <h2>Scroll</h2><button id="scroll-button"><ChevronDown /></button>
 </div>
+
+<script>
+  const scrollButton = document.getElementById("scroll-button");
+  scrollButton?.addEventListener("click", () => {
+    const ws = new WebSocket("ws://127.0.0.1:6745/plugin");
+    const thing = JSON.stringify({
+      name: "AIRCRAFT_UPDATE",
+      type: "STREAM",
+      data: {
+        title: "F16",
+        registration:
+          Math.random() > 0.5 ? "OrbX Can't Write Code" : "Star was here",
+        type: "F16",
+        model: "config",
+        airline: null,
+      },
+      seq_id: null,
+    });
+    console.log(thing);
+    ws.onopen = () => {
+      ws.send(thing);
+
+      console.log("Packet sent successfully.");
+      setTimeout(() => ws.close(), 100); // Flush buffer and close
+      ws.onerror = (err) => console.error("WebSocket Error:", err);
+    };
+  });
+</script>
